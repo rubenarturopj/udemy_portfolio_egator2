@@ -1,0 +1,40 @@
+#testimonials {
+    padding-bottom: 0;
+}
+
+/*swiper class comes with the swiperJS extension. Swiper class wraps all swiper things*/
+.swiper {
+    height: fit-content;
+    padding-bottom: 12rem;
+    /*this padding on top s to give space for micro intreraction on hover of swiper slide*/
+    padding-top: 1rem;
+}
+.swiper-slide {
+    cursor: grab;
+}
+
+.testimonial__client {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.testimonial__client-avatar {
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.swiper-pagination {
+    margin-bottom: 8rem;
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-primary);
+}
+
+/* the media query for smaller screens is in the Testimonials file, because Swiper it's been used, it has its own property called SlidesPerView. Breakpoints were added to fit other screen dimensions*/
+ 
